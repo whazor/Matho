@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="Routing" uuid="5160b865-5836-41a9-9b5d-96c83eb2d4c9" languageVersion="0" moduleVersion="0">
+<language namespace="Tables" uuid="44e525cb-aabb-47c9-a9a1-c963d3af02a2" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,7 +7,7 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator alias="main" namespace="Routing#2592538138862845478" uuid="aea44dca-c139-45f0-bc80-6d10bdfa0fa1">
+    <generator alias="main" namespace="Tables#2592538138863483687" uuid="ddeb445d-c1cd-4f80-8955-3562567b2e12">
       <models>
         <modelRoot contentPath="${module}/generator/template" type="default">
           <sourceRoot location="." />
@@ -36,8 +36,8 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="5160b865-5836-41a9-9b5d-96c83eb2d4c9(Routing)" version="0" />
-        <module reference="aea44dca-c139-45f0-bc80-6d10bdfa0fa1(Routing#2592538138862845478)" version="0" />
+        <module reference="44e525cb-aabb-47c9-a9a1-c963d3af02a2(Tables)" version="0" />
+        <module reference="ddeb445d-c1cd-4f80-8955-3562567b2e12(Tables#2592538138863483687)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
         <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
@@ -92,7 +92,7 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="5160b865-5836-41a9-9b5d-96c83eb2d4c9(Routing)" version="0" />
+    <module reference="44e525cb-aabb-47c9-a9a1-c963d3af02a2(Tables)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />

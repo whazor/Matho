@@ -14,6 +14,9 @@
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
@@ -56,7 +59,7 @@
   </registry>
   <node concept="1TIwiD" id="2fUyVeh$Lgf">
     <property role="EcuMT" value="2592538138862883855" />
-    <property role="TrG5h" value="RouteFile" />
+    <property role="TrG5h" value="Router" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2fUyVeh$Lh4" role="1TKVEi">
@@ -75,6 +78,16 @@
       <property role="IQ2nx" value="2592538138862883877" />
       <property role="TrG5h" value="method" />
       <ref role="AX2Wp" node="2fUyVeh$Lgh" resolve="HTTP_Method" />
+    </node>
+    <node concept="1TJgyi" id="2fUyVehAFi$" role="1TKVEl">
+      <property role="IQ2nx" value="2592538138863383716" />
+      <property role="TrG5h" value="nocsrf" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="2fUyVehBc2$" role="1TKVEl">
+      <property role="IQ2nx" value="2592538138863517860" />
+      <property role="TrG5h" value="action" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="2fUyVeh$LgM" role="1TKVEi">
       <property role="IQ2ns" value="2592538138862883890" />
@@ -134,7 +147,7 @@
     <node concept="1TJgyi" id="2fUyVeh$Q3x" role="1TKVEl">
       <property role="IQ2nx" value="2592538138862903521" />
       <property role="TrG5h" value="keyword" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="2fUyVeh_eJB" resolve="StringPart" />
     </node>
     <node concept="PrWs8" id="2fUyVeh$Q3z" role="PzmwI">
       <ref role="PrY4T" node="2fUyVeh$Q3v" resolve="IPart" />
@@ -152,7 +165,31 @@
     <node concept="1TJgyi" id="2fUyVeh$Q3E" role="1TKVEl">
       <property role="IQ2nx" value="2592538138862903530" />
       <property role="TrG5h" value="keyword" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="AX2Wp" node="2fUyVeh_eJG" resolve="Keyword" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="2fUyVeh_eJB">
+    <property role="3GE5qa" value="paths" />
+    <property role="TrG5h" value="StringPart" />
+    <property role="FLfZY" value="[a-z0-9\\-._~%!$&amp;'()*+,;=@][a-z0-9\\-._~%!$&amp;'()*+,;=:@]*" />
+  </node>
+  <node concept="Az7Fb" id="2fUyVeh_eJG">
+    <property role="TrG5h" value="Keyword" />
+    <property role="FLfZY" value="[a-zA-Z]" />
+  </node>
+  <node concept="1TIwiD" id="2fUyVehAEiB">
+    <property role="EcuMT" value="2592538138863379623" />
+    <property role="3GE5qa" value="paths" />
+    <property role="TrG5h" value="RegularPart" />
+    <property role="34LRSv" value="*" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2fUyVehAEiC" role="1TKVEl">
+      <property role="IQ2nx" value="2592538138863379624" />
+      <property role="TrG5h" value="keyword" />
+      <ref role="AX2Wp" node="2fUyVeh_eJG" resolve="Keyword" />
+    </node>
+    <node concept="PrWs8" id="2fUyVehAEiE" role="PzmwI">
+      <ref role="PrY4T" node="2fUyVeh$Q3v" resolve="IPart" />
     </node>
   </node>
 </model>
