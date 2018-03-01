@@ -8,20 +8,21 @@
   <imports />
   <registry>
     <language id="44e525cb-aabb-47c9-a9a1-c963d3af02a2" name="Tables">
-      <concept id="2592538138863707940" name="Tables.structure.Decimal" flags="ng" index="2MpiMn" />
+      <concept id="2592538138864937525" name="Tables.structure.ReferenceColumn" flags="ng" index="2Mie66">
+        <reference id="2592538138864937526" name="column" index="2Mie65" />
+      </concept>
+      <concept id="2592538138864869652" name="Tables.structure.Reference" flags="ng" index="2MiYEB">
+        <reference id="2592538138864869653" name="table" index="2MiYEA" />
+        <child id="2592538138864869686" name="columns" index="2MiYE5" />
+      </concept>
+      <concept id="2592538138865117886" name="Tables.structure.Varchar" flags="ng" index="2MjU4d" />
       <concept id="2592538138863707911" name="Tables.structure.BigInt" flags="ng" index="2MpiMO" />
       <concept id="2592538138863483697" name="Tables.structure.Column" flags="ng" index="2MpF22">
-        <property id="2592538138863541358" name="is_nullable" index="2MpTvt" />
+        <child id="2592538138864904020" name="reference" index="2MiQNB" />
         <child id="2592538138863541352" name="datetype" index="2MpTvr" />
       </concept>
       <concept id="2592538138863483689" name="Tables.structure.Table" flags="ng" index="2MpF2q">
         <child id="2592538138863483694" name="columns" index="2MpF2t" />
-      </concept>
-      <concept id="2592538138863541342" name="Tables.structure.Numeric" flags="ng" index="2MpTvH">
-        <property id="2592538138863663041" name="scale" index="2Mp7LM" />
-        <property id="2592538138863628350" name="precision" index="2MpfId" />
-        <property id="2592538138863719589" name="has_precision" index="2MplWm" />
-        <property id="2592538138863719593" name="has_scale" index="2MplWq" />
       </concept>
     </language>
     <language id="5160b865-5836-41a9-9b5d-96c83eb2d4c9" name="Routing">
@@ -34,6 +35,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -44,21 +48,42 @@
       <node concept="2MqpYp" id="2fUyVehB9bR" role="2MqpY1" />
     </node>
   </node>
-  <node concept="2MpF2q" id="2fUyVehBhYI">
-    <property role="TrG5h" value="TestTabel" />
-    <node concept="2MpF22" id="2fUyVehBhYJ" role="2MpF2t">
-      <property role="TrG5h" value="hoi" />
-      <node concept="2MpiMn" id="2fUyVehDmJd" role="2MpTvr">
-        <property role="2MplWm" value="true" />
-        <property role="2MplWq" value="true" />
-        <property role="2MpfId" value="6" />
-        <property role="2Mp7LM" value="5" />
-      </node>
+  <node concept="2MpF2q" id="2fUyVehHiEC">
+    <property role="TrG5h" value="Products" />
+    <property role="3GE5qa" value="models" />
+    <node concept="2MpF22" id="2fUyVehHiED" role="2MpF2t">
+      <property role="TrG5h" value="product_id" />
+      <node concept="2MpiMO" id="2fUyVehHiEH" role="2MpTvr" />
     </node>
-    <node concept="2MpF22" id="2fUyVehDnTp" role="2MpF2t">
-      <property role="TrG5h" value="yo mama" />
-      <property role="2MpTvt" value="false" />
-      <node concept="2MpiMO" id="2fUyVehDnTv" role="2MpTvr" />
+  </node>
+  <node concept="2MpF2q" id="2fUyVehHiEK">
+    <property role="TrG5h" value="Users" />
+    <property role="3GE5qa" value="models" />
+    <node concept="2MpF22" id="2fUyVehHiEL" role="2MpF2t">
+      <property role="TrG5h" value="user_id" />
+      <node concept="2MpiMO" id="2fUyVehHiEP" role="2MpTvr" />
+    </node>
+    <node concept="2MpF22" id="2fUyVehHiES" role="2MpF2t">
+      <property role="TrG5h" value="name" />
+      <node concept="2MjU4d" id="2fUyVehHjji" role="2MpTvr" />
+    </node>
+  </node>
+  <node concept="2MpF2q" id="2fUyVehHyE3">
+    <property role="3GE5qa" value="models" />
+    <property role="TrG5h" value="ShoppingCart" />
+    <node concept="2MpF22" id="2fUyVehHyE4" role="2MpF2t">
+      <property role="TrG5h" value="cart_id" />
+      <node concept="2MpiMO" id="2fUyVehHyE8" role="2MpTvr" />
+    </node>
+    <node concept="2MpF22" id="2fUyVehHyEb" role="2MpF2t">
+      <property role="TrG5h" value="user_id" />
+      <node concept="2MpiMO" id="2fUyVehHyEh" role="2MpTvr" />
+      <node concept="2MiYEB" id="2fUyVehHyEo" role="2MiQNB">
+        <ref role="2MiYEA" node="2fUyVehHiEK" resolve="Users" />
+        <node concept="2Mie66" id="2fUyVehHyEs" role="2MiYE5">
+          <ref role="2Mie65" node="2fUyVehHiEL" resolve="user_id" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

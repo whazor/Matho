@@ -9,6 +9,23 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
+        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+      </concept>
+      <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
+        <property id="2756621024541681854" name="text" index="1irPi9" />
+        <child id="1860120738943552534" name="color" index="3PKjny" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
+    </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
@@ -34,6 +51,7 @@
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
@@ -78,6 +96,20 @@
     <node concept="PrWs8" id="2fUyVehBfp1" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1irR5M" id="2fUyVehGm50" role="rwd14">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irR9n" id="2fUyVehGm54" role="1irR9h">
+        <node concept="3PKj8D" id="2fUyVehGm5d" role="3PKjn_">
+          <property role="3PKj8l" value="ffffff" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2fUyVehGm5k" role="1irR9h">
+        <property role="1irPi9" value="T" />
+        <node concept="3PKj8D" id="2fUyVehGm5r" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="2fUyVehB3GL">
     <property role="EcuMT" value="2592538138863483697" />
@@ -93,12 +125,23 @@
       <property role="TrG5h" value="default" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="2fUyVehHyEv" role="1TKVEl">
+      <property role="IQ2nx" value="2592538138865183391" />
+      <property role="TrG5h" value="show_reference" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
     <node concept="1TJgyj" id="2fUyVehBhLC" role="1TKVEi">
       <property role="IQ2ns" value="2592538138863541352" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="datetype" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="2fUyVehBhLv" resolve="IDataType" />
+    </node>
+    <node concept="1TJgyj" id="2fUyVehGutk" role="1TKVEi">
+      <property role="IQ2ns" value="2592538138864904020" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="reference" />
+      <ref role="20lvS9" node="2fUyVehGm4k" resolve="Reference" />
     </node>
     <node concept="PrWs8" id="2fUyVehBhLG" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -249,6 +292,47 @@
     <node concept="M4N5e" id="2fUyVehDnTK" role="M5hS2">
       <property role="1uS6qv" value="true" />
       <property role="1uS6qo" value="NULL" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fUyVehGm4k">
+    <property role="EcuMT" value="2592538138864869652" />
+    <property role="TrG5h" value="Reference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2fUyVehGm4Q" role="1TKVEi">
+      <property role="IQ2ns" value="2592538138864869686" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="columns" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2fUyVehGACP" resolve="ReferenceColumn" />
+    </node>
+    <node concept="1TJgyj" id="2fUyVehGm4l" role="1TKVEi">
+      <property role="IQ2ns" value="2592538138864869653" />
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="table" />
+      <ref role="20lvS9" node="2fUyVehB3GD" resolve="Table" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fUyVehGACP">
+    <property role="EcuMT" value="2592538138864937525" />
+    <property role="TrG5h" value="ReferenceColumn" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2fUyVehGACQ" role="1TKVEi">
+      <property role="IQ2ns" value="2592538138864937526" />
+      <property role="20lmBu" value="reference" />
+      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="column" />
+      <ref role="20lvS9" node="2fUyVehB3GL" resolve="Column" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2fUyVehHiEY">
+    <property role="EcuMT" value="2592538138865117886" />
+    <property role="3GE5qa" value="types" />
+    <property role="TrG5h" value="Varchar" />
+    <property role="34LRSv" value="varchar" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2fUyVehHiEZ" role="PzmwI">
+      <ref role="PrY4T" node="2fUyVehBhLv" resolve="IDataType" />
     </node>
   </node>
 </model>
