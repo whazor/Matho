@@ -9,14 +9,17 @@
   <dependencies>
     <dependency reexport="false">5160b865-5836-41a9-9b5d-96c83eb2d4c9(Routing)</dependency>
     <dependency reexport="false">44e525cb-aabb-47c9-a9a1-c963d3af02a2(Tables)</dependency>
+    <dependency reexport="false">b195c1f9-c8ac-423e-92a5-76f06455cb81(DataManipulation)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:b195c1f9-c8ac-423e-92a5-76f06455cb81:DataManipulation" version="0" />
     <language slang="l:5160b865-5836-41a9-9b5d-96c83eb2d4c9:Routing" version="0" />
     <language slang="l:44e525cb-aabb-47c9-a9a1-c963d3af02a2:Tables" version="-1" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="b195c1f9-c8ac-423e-92a5-76f06455cb81(DataManipulation)" version="0" />
     <module reference="22bbc7cb-2bd0-4ba3-8aed-cdb2d769e974(Demo.sandbox)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />

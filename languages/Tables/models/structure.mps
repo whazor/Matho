@@ -125,11 +125,6 @@
       <property role="TrG5h" value="default" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="2fUyVehHyEv" role="1TKVEl">
-      <property role="IQ2nx" value="2592538138865183391" />
-      <property role="TrG5h" value="show_reference" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="2fUyVehBhLC" role="1TKVEi">
       <property role="IQ2ns" value="2592538138863541352" />
       <property role="20lmBu" value="aggregation" />
@@ -140,8 +135,9 @@
     <node concept="1TJgyj" id="2fUyVehGutk" role="1TKVEi">
       <property role="IQ2ns" value="2592538138864904020" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="reference" />
-      <ref role="20lvS9" node="2fUyVehGm4k" resolve="Reference" />
+      <property role="20kJfa" value="properties" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="2fUyVehLlOI" resolve="IColumnProperty" />
     </node>
     <node concept="PrWs8" id="2fUyVehBhLG" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -297,14 +293,9 @@
   <node concept="1TIwiD" id="2fUyVehGm4k">
     <property role="EcuMT" value="2592538138864869652" />
     <property role="TrG5h" value="Reference" />
+    <property role="3GE5qa" value="columnProperties" />
+    <property role="34LRSv" value="references" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2fUyVehGm4Q" role="1TKVEi">
-      <property role="IQ2ns" value="2592538138864869686" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="columns" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="2fUyVehGACP" resolve="ReferenceColumn" />
-    </node>
     <node concept="1TJgyj" id="2fUyVehGm4l" role="1TKVEi">
       <property role="IQ2ns" value="2592538138864869653" />
       <property role="20lmBu" value="reference" />
@@ -312,17 +303,14 @@
       <property role="20kJfa" value="table" />
       <ref role="20lvS9" node="2fUyVehB3GD" resolve="Table" />
     </node>
-  </node>
-  <node concept="1TIwiD" id="2fUyVehGACP">
-    <property role="EcuMT" value="2592538138864937525" />
-    <property role="TrG5h" value="ReferenceColumn" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2fUyVehGACQ" role="1TKVEi">
-      <property role="IQ2ns" value="2592538138864937526" />
+    <node concept="1TJgyj" id="2fUyVehIuKB" role="1TKVEi">
+      <property role="IQ2ns" value="2592538138865429543" />
       <property role="20lmBu" value="reference" />
-      <property role="20lbJX" value="1" />
       <property role="20kJfa" value="column" />
       <ref role="20lvS9" node="2fUyVehB3GL" resolve="Column" />
+    </node>
+    <node concept="PrWs8" id="2fUyVehLlOJ" role="PzmwI">
+      <ref role="PrY4T" node="2fUyVehLlOI" resolve="IColumnProperty" />
     </node>
   </node>
   <node concept="1TIwiD" id="2fUyVehHiEY">
@@ -334,6 +322,11 @@
     <node concept="PrWs8" id="2fUyVehHiEZ" role="PzmwI">
       <ref role="PrY4T" node="2fUyVehBhLv" resolve="IDataType" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="2fUyVehLlOI">
+    <property role="EcuMT" value="2592538138866179374" />
+    <property role="TrG5h" value="IColumnProperty" />
+    <property role="3GE5qa" value="columnProperties" />
   </node>
 </model>
 
