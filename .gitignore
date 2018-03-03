@@ -4,8 +4,8 @@ sources_gen.caches
 source_gen.caches
 classes_gen
 *.iws
+*.swp
 build
-.mps
-
 build.xml
 buildDistribution.xml
+workspace.xml
