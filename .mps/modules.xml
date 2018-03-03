@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/DataManipulation/DataManipulation.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Routing/Routing.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/Tables/Tables.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Demo.sandbox/Demo.sandbox.msd" folder="zandbak" />
+      <modulePath path="$PROJECT_DIR$/solutions/Matho.build/Matho.build.msd" folder="" />
+    </projectModules>
+  </component>
+</project>
